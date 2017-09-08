@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <form action="/survey" method="post">
+            <p>
+                Your Name: 
+                <input type="text" name="name">
+            </p>
+            <p>
+                Your Location: 
+                <select name="location">
+                    <option value="Seattle">Seattle</option>
+                    <option value="Los Angeles">Los Angeles</option>
+                    <option value="San Jose">San Jose</option>
+                </select>
+            </p>
+            <p>
+                Favorite Language: 
+                <select name="favlang">
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                </select>
+            </p>
+            <p>
+                <p>Comment (optional):</p>
+                <textarea name="comment" cols="30" rows="5"></textarea>
+            </p>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
